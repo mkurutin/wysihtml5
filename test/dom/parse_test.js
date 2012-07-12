@@ -239,6 +239,14 @@ if (wysihtml5.browser.supported()) {
       ),
       '<img alt="">'
     );
+
+    this.equal(
+      this.sanitize(
+        '<img alt="video/api">',
+        rules
+      ),
+      '<img alt="video/api">'
+    );
   });
 
 
